@@ -40,15 +40,15 @@ footer {
 
 #botao_p:hover {
     
-    background-color: black;    
+    background-color: #333333;    
     color: white !important;
 }
 
 
 #botao_p {
     border-radius: 25px;
-    border: 2.5px solid #000;
-    color: black;
+    border: 2.5px solid #333333;
+    color: #333333;
 }
 
 
@@ -61,9 +61,53 @@ footer {
 
 #botao {
     color: black;
+    margin-right: 15px;
 }
 
 #botao:hover {
-    color: black;
-    text-decoration: underline;
+    color: #666666;
 }
+
+.ativo {
+    color: #666666 !important;
+    /*margin-right: 15px !important;*/
+    /*border-radius: 25px !important;*/
+    /*border-bottom: solid #333333 !important;*/
+}
+
+#formulario {
+    /*margin-bottom: 300px;*/
+    background: #333333 !important;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+#botao_email {
+    background: #4D4D4D !important;
+    border-color: #4D4D4D !important;
+    color: white;
+    height: 50px !important;
+}
+
+#campo_email {
+    color: black !important;
+    height: 50px !important;
+}
+
+#texto_form {
+    color: white !important;
+}
+
+#texto_form_tit {
+    color: #C2C2C2 !important;
+    letter-spacing: 2px !important;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+

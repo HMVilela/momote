@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Momote</title>
+    <title>momote</title>
     <link rel="icon" type="image/png" href="/images/momote_icon.png" />
 
     <!-- Bootstrap Core CSS -->
@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" style="margin-top: 10px; margin-bottom: 8px; float: right;">
                     <li>
-                        <a id="botao" href="http://127.0.0.1:6169//index.html"><b>HOME</b></a>
+                        <a id="botao" class="ativo" href="http://127.0.0.1:6169//index.html"><b>HOME</b></a>
                     </li>
                     <li>
                         <a id="botao" href="http://127.0.0.1:6169//momote001.html"><b>MOMOTE001</b></a>
@@ -74,6 +74,7 @@
             <li data-target="#myCarousel" data-slide-to="3"></li>
             <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
+        
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner" >
@@ -127,39 +128,49 @@
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row" style="margin: auto;">
+        <div class="row">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: center; line-height: 1.5;">
                <span >
-                <br><br><br>Estamos criando uma linha de produtos e kits de desenvolvimento que viabilizam e agilizam a criação de aplicações para a Internet das coisas                       (IoT).<br><br>
+                <br><br>Estamos criando uma linha de produtos e kits de desenvolvimento que viabilizam e agilizam a criação de aplicações para a Internet das coisas                       (IoT).<br><br>
                 O <a href="">momote001</a> é o nosso primeiro produto. Ele vai permitir que qualquer pessoa crie aplicações com comunicação sem-fio para diversas áreas.                       Mobilidade, saúde, comércio, segurança, automação residencial, comercial, etc.<br><br>
                 Por enquanto estamos finalizando os acordos e parcerias necessários para fabricá-lo aqui no Brasil e vender por um preço competitivo. Enquanto a placa não sai                 do forno, estamos trabalhando para criar as ferramentas e os ambientes de desenvolvimento que serão disponibilizados. Ajude desde já a criar a plataforma do                   futuro e participe ativamente da comunidade de desenvolvimento. Saiba mais!<br><br>
-                Em breve, os arquivos finais para fabricação e produção do momote001 serão disponibilizados para que qualquer pessoa estude, fabrique e evolua o projeto.<br>                <br>
+                Em breve, os arquivos finais para fabricação e produção do momote001 serão disponibilizados para que qualquer pessoa estude, fabrique e evolua o projeto.<br>                <br><br>
                </span>
             </div>
             <div class="col-lg-1"></div>
         </div>
         
         
-        
-        
-        
-        
-        
-        
-        
-
-        <hr>
+        <div id="formulario">
+           <div class="col-lg-3"></div>
+            <div class="col-lg-6" style="font-size: 1.3em; text-align: center; line-height: 1.5;">               
+                <br><h3 id="texto_form_tit"><b>FIQUE POR DENTRO</b></h3><br>
+                <span id="texto_form">
+                Faça parte de nossa comunidade e fique informado sobre novidades a respeito de lançamentos futuros da linha momote:<br><br>
+                <div class="col-lg-3"></div>
+                <input id="campo_email" class= "col-lg-4" type="email" placeholder="Seu e-mail">
+                <input id= "botao_email" class= "col-lg-2" type="submit">
+                <div class="col-lg-3"></div> 
+               </span><br><br>
+            <p style="font-size: 13px; color: white;"><br>Receba e-mails com promoções e novidades da família momote!</p><br>                       
+            </div>
+            <div class="col-lg-3"></div>
+            
+            <!--
+            <div class="footer">
+             <div class="col-lg-3"></div>
+              <div class="col-lg-6">
+                 <div class="col-lg-4"><img src="/images/momote_footer.png" alt=""></div>
+                 <div class="col-lg-4"><img src="/images/open_source_footer.png" alt=""></div>
+                 <div class="col-lg-4"></div>
+              </div>
+             <div class="col-lg-3"></div>                
+            </div>-->
+        </div>
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; momote.io 2016</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
+        
 
     </div>
     <!-- /.container -->

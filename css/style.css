@@ -90,6 +90,14 @@ footer {
     height: 50px !important;
 }
 
+#botao_contato {
+    background: #333333 !important;
+    border-color: #333333 !important;
+    color: white;
+    height: 50px !important;
+    width: 100px!important;
+}
+
 #campo_email {
     color: black !important;
     height: 50px !important;
@@ -104,10 +112,12 @@ footer {
     letter-spacing: 2px !important;
 }
 
-.footer {
+#rodape {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    background-color: #1F1F1F !important;
 }
 
+
+#contato_html {
+    padding-top: 40px !important;
+}

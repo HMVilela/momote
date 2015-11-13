@@ -33,9 +33,7 @@ body {
     -o-background-size: cover;
 }
 
-footer {
-    margin: 50px 0;
-}
+
 
 
 #botao_p:hover {
@@ -76,16 +74,15 @@ footer {
 }
 
 #formulario {
-    /*margin-bottom: 300px;*/
     background: #333333 !important;
-    position: absolute;
-    width: 100%;
-    left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #botao_email {
     background: #4D4D4D !important;
     border-color: #4D4D4D !important;
+    font-size: 0.7em;
     color: white;
     height: 50px !important;
 }
@@ -114,10 +111,33 @@ footer {
 
 #rodape {
     position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #1F1F1F !important;
 }
 
 
 #contato_html {
-    padding-top: 40px !important;
+    padding-top: 70px !important;
 }
+
+footer {
+    height: auto;   
+    background-color: #1F1F1F; 
+    bottom: 0;    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+footer h4 {
+    font-size: 1.4em;
+    color: #717577;    
+}
+
+footer .col-lg-4 {
+    margin-top: 30px !important;
+}
+
+

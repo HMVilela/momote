@@ -17,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -129,13 +130,203 @@
 
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
-            <div class="col-lg-10" style="font-size: 1.3em; text-align: center; line-height: 1.5;">
-               
+            <div class="col-lg-10" style="font-size: 1.3em; line-height: 1.5; margin-top: 100px;">
+               <img src="images/momote001.png" alt="">
             </div>
-            <div class="col-lg-1"></div>
+            <div class="col-lg-1"></div>            
         </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
+            O momote001 representa o primeiro de muitos passos que serão dados até que seja totalmente viável a implantação de Internet em qualquer coisa.
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5;">
+                <div class="col-lg-6" style="font-size: 1.3em; text-align: center; margin-top:20px;">
+                    <img src="images/momote001_placa.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <span>Ele contém um chip CC2650 da Texas Instruments, que é um processador próprio para controle de sensores e nós finais para IoT. Além de um ARM Cortex M3 programável (para sua aplicação), conta também com 2 rádios que suportam 2 dos padrões mais comuns da IoT: Bluetooth Low Energy (BLE), um padrão moderno para comunicação com aparelhos celulares smartphones e IEEE802.15.4, usado para fazer redes de malha (ou mesh), ZigBee, XBee, Thread, 6LoWPAN, etc. É um processador de baixíssimo consumo de energia, e por isso, dependendo da aplicação, é possível alimentá-lo direamente com 2 baterias alcalinas ou até mesmo com uma bateria CR2032.</span>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 40px;">
+            Estamos quase finalizando os preparativos necessário para fabricar e disponibilizar a venda do primeiro lote. Caso queira receber uma notícia quando o primeiro lote estiver a venda, preencha os campos a seguir:
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <form role="form" id="contato_momote">
+                <div class="form-group">
+                  <label for="nome">Nome:*</label>
+                  <input type="nome" class="form-control" id="email" placeholder="">
+                </div><br>
+                <div class="form-group">
+                  <label for="email">E-mail:*</label>
+                  <input type="email" class="form-control" id="email" placeholder="">
+                </div><br>  
+                <button id="botao_contato" type="submit" class="button">ENVIAR</button>
+              </form>
+            </div>
+            <div class="col-lg-2"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 0.5em; text-align: justify; line-height: 1.5em; margin-top: 100px;">
+            <h3><b>ESPECIFICAÇÕES TÉCNICAS</b></h3>
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           
+            <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 100px;">
+                <div class="col-lg-4" style="text-align: center;">
+                    <span class="glyphicon glyphicon-dashboard" id="glyph_icon" style=""></span>
+                </div> 
+                <div class="col-lg-8">
+                    <h4><b>PROCESSADOR</b></h4>
+                    <span style="font-size: 0.8em; line-height: 2em">
+                    <li>Texas Instruments CC2650</li>
+                    <li>32-bit ARM Cortex-M3 em 48MHz</li>
+                    <li>128KB de memória Flash</li>
+                    <li>20KB de memória SRAM</li>
+                    <li>Controlador de sensores integrado</li>
+                    <li>Alimentação: 1,8V a 3,8V</li>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 100px;">
+                <div class="col-lg-4" style="text-align: center;">
+                    <span class="glyphicon glyphicon-cog" id="glyph_icon" style=""></span>
+                </div> 
+                <div class="col-lg-8">
+                    <h4><b>PERIFÉRICOS</b></h4>
+                    <span style="font-size: 0.8em; line-height: 2em">
+                    <li>Memória Flash extra de 512KB</li>
+                    <li>LED</li>
+                    <li>Botão</li>
+                    <li>15 GPIO</li>
+                    <li>4 Timers com PWM</li>
+                    <li>UART, SPI, I2C, I2S, ADC, DAC...</li>
+                    </span>
+                </div>
+            </div>
+                        
+        </div>
+        <div class="row" style="margin: auto;">
+           
+            <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
+                <div class="col-lg-4" style="text-align: center;">
+                    <span class="glyphicon glyphicon-cloud" id="glyph_icon" style=""></span>
+                </div> 
+                <div class="col-lg-8">
+                    <h4><b>CONECTIVIDADE</b></h4>
+                    <span style="font-size: 0.8em; line-height: 2em">
+                    <li>Antena 2,4GHz integrada</li>
+                    <li>Bluetooth Low Energy (BLE) 4.1</li>
+                    <li>IEEE802.15.4 MAC e PHY</li>
+                    <li>6LoWPAN</li>
+                    <li>Outros...</li>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
+                <div class="col-lg-4" style="text-align: center;">
+                    <span class="glyphicon glyphicon-book" id="glyph_icon" style=""></span>
+                </div> 
+                <div class="col-lg-8">
+                    <h4><b>CAPAS E EXPANSÃO</b></h4>
+                    <span style="font-size: 0.8em; line-height: 2em">
+                    <li>Suporte para bateria CR2032</li>
+                    <li>Conversor UART/USB debug</li>
+                    <li>Bateria recarregável</li>
+                    <li>Outras estão vindo...</li>
+                    </span>
+                </div>
+            </div>
+                        
+        </div>
+        <div class="row" style="margin: auto;">
+           
+            <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
+                <div class="col-lg-4" style="text-align: center;">
+                    <span class="glyphicon glyphicon-flash" id="glyph_icon" style=""></span>
+                </div> 
+                <div class="col-lg-8">
+                    <h4><b>SOFTWARE</b></h4>
+                    <span style="font-size: 0.8em; line-height: 2em">
+                    <li>Ambiente de desenvolvimento integrado com Energia/Arduino</li>
+                    <li>Suporte a múltiplas pilhas e sistemas RTOS:</li>
+                        <ul type="circle">
+                        <li>Contiki-os</li>
+                        <li>TI-RTOS</li>
+                        <li>Outros</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
+                <div class="col-lg-4" style="text-align: center;">
+                    <span class="glyphicon glyphicon-fullscreen" id="glyph_icon" style=""></span>
+                </div> 
+                <div class="col-lg-8">
+                    <h4><b>DIMENSÕES E PESO</b></h4>
+                    <span style="font-size: 0.8em; line-height: 2em">
+                    <li>36mm x 27mm</li>
+                    <li>14g</li>
+                    </span>
+                </div>
+            </div>
+                        
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 0.5em; text-align: justify; line-height: 1.5em; margin-top: 100px;">
+            <h3><b>ARQUIVOS FONTE DE DESIGN</b></h3>
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
+            Estamos finalizando os preparativos e desenvolvimentos necessários para fabricar o momote001 e disponibilizar para venda. Enquanto isso, o esquema elétrico e o layout da placa de circuito impresso que foram feitos no <a href="www.circuitmaker.com">Circuit Maker</a> estão disponibilizados sob a licença CERN OHL v1.2, que permite que qualquer um acesse e estude esse hardware através dos seguintes links:
+            <ul style="margin-top: 30px; margin-left: 20px;">
+            <li>Projeto do CM: Buscar pelo projeto momote001</li>
+            <li>Esquema elétrico em PDF:</li>
+            <li>Bill of Materials:</li>
+            <li>Arquivos para fabricação (Gerber):</li>
+            <li>Modelo 3D em formato STEP:</li>
+            </ul>
+            
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
+            <b>Caso você seja uma empresa que deseja fabricar esses produtos em escala ou embutir em seu produto, entre em contato que podemos ajudar com os desenvolvimentos tecnológicos da aplicação e da produção. Ficaremos felizes em ouvir a sua necessidade e descobrir como podemos contribuir com a sua solução.</b>
+            </div>            
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: center; line-height: 1.5; margin-top: 40px;">
+            <a href="">Entre em contato por e-mail e agende uma conversa.</a>
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        
     </div>
         
+    
         <div class="row" id="formulario" style="margin-top: 80px;">
            <div class="col-lg-3"></div>
             <div class="col-lg-6" style="font-size: 1.3em; text-align: center; line-height: 1.5;">               
@@ -166,7 +357,7 @@
             <!-- /.row -->
         </footer>
 
-    </div>
+    
     <!-- /.container -->
 
     <!-- jQuery -->

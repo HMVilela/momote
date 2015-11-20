@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body ng-app="Momote" ng-controller="MomoteCtrl">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: rgba(240,240,240,0.9); !important;" >
@@ -41,22 +41,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="images/momote.png" alt="momote icon" style="margin: auto;"></a>
+                <a class="navbar-brand" href="" ng-click="ir_para_home()"><img src="images/momote.png" alt="momote icon" style="margin: auto;" ></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" style="margin-top: 10px; margin-bottom: 8px; float: right;">
                     <li>
-                        <a id="botao" class="ativo" href="http://hmvilela.github.io/momote/index.html"><b>HOME</b></a>
+                        <a id="botao" class="ativo" href="" ng-click="ir_para_home()"><b>HOME</b></a>
                     </li>
                     <li>
-                        <a id="botao" href="http://hmvilela.github.io/momote/momote001.html"><b>MOMOTE001</b></a>
+                        <a id="botao" href="" ng-click="momote_001()"><b>MOMOTE001</b></a>
                     </li>
                     <li>
-                        <a id="botao" href="http://hmvilela.github.io/momote/contato.html"><b>CONTATO</b></a>
+                        <a id="botao" href="" ng-click="contato()"><b>CONTATO</b></a>
                     </li>
                     <li>
-                        <a id="botao_p" href="http://hmvilela.github.io/momote/participe.html"><b>PARTICIPE</b></a>
+                        <a id="botao_p" href="" ng-click="participe()"><b>PARTICIPE</b></a>
                     </li>
                 </ul>
             </div>
@@ -126,22 +126,10 @@
 
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-           <div class="col-lg-1"></div>
-            <div class="col-lg-10" style="font-size: 1.3em; text-align: center; line-height: 1.5;">
-               <span>
-                <br><br><br>Estamos criando uma linha de produtos e kits de desenvolvimento que viabilizam e agilizam a criação de aplicações para a Internet das coisas                       (IoT).<br><br>
-                O <a href="">momote001</a> é o nosso primeiro produto. Ele vai permitir que qualquer pessoa crie aplicações com comunicação sem-fio para diversas áreas.                       Mobilidade, saúde, comércio, segurança, automação residencial, comercial, etc.<br><br>
-                Por enquanto estamos finalizando os acordos e parcerias necessários para fabricá-lo aqui no Brasil e vender por um preço competitivo. Enquanto a placa não sai                 do forno, estamos trabalhando para criar as ferramentas e os ambientes de desenvolvimento que serão disponibilizados. Ajude desde já a criar a plataforma do                   futuro e participe ativamente da comunidade de desenvolvimento. Saiba mais!<br><br>
-                Em breve, os arquivos finais para fabricação e produção do momote001 serão disponibilizados para que qualquer pessoa estude, fabrique e evolua o projeto.<br><br>
-               </span>
-            </div>
-            <div class="col-lg-1"></div>
-        </div>
-    </div> 
+     <div ng-view>
+         
+     </div>
+    
        
        
         <div class="row" id="formulario" style="margin-top: 80px;">
@@ -185,7 +173,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/angular/angular.js"></script>
+     <script src="js/angular/angular-route.js"></script>
+     <script src="js/app.js"></script>
+     <script src="js/controllers/MomoteCtrl.js"></script>
+     <script src="js/config/roteamento.js"></script>
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({

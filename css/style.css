@@ -53,7 +53,9 @@ body {
 .b_texto {
     background-color:rgba(0, 0, 0, 0.4);
     display: inline;
-    line-height: 1.3em;
+    line-height: 1.7em;
+    font-size: 5vh;
+    
 }
 
 
@@ -161,4 +163,17 @@ footer .col-lg-4 {
 
 body {
     font-family: 'Open Sans', sans-serif !important;
+}
+
+#myCarousel {
+    height: 80%;
+    
+}
+
+.carousel-caption {
+    margin: auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    height: 100%;
+    max-height: inherit;
 }

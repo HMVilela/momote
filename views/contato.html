@@ -2,15 +2,15 @@
      
       <div class="col-lg-2"></div>
          <div class="col-lg-8"> 
-             <div class="row" style="margin: auto;">
+             <div class="row">
                 <div class="col-lg-12" style="font-size: 0.5em; line-height: 1.5em; margin-top: 80px;">
                 <h3><b>CONTATO:</b></h3>
             </div>           
         </div>    
-              <form role="form" id="contato_html">
+              <form action= "form.php" method= "post" role="form" id="contato_html">
                 <div class="form-group">
                   <label for="nome">Nome:*</label>
-                  <input type="nome" class="form-control" id="email" placeholder="">
+                  <input type="nome" class="form-control" id="nome" placeholder="">
                 </div><br>
                 <div class="form-group">
                   <label for="email">E-mail:*</label>
@@ -22,7 +22,7 @@
                 </div><br>
                 <div class="form-group">
                   <label for="mensagem">Mensagem:*</label>
-                  <textarea type="mensagem" class="form-control" rows="5" id="mensagem" placeholder=""></textarea>
+                  <textarea type="mensagem" class="form-control" rows="10" id="mensagem" placeholder=""></textarea>
                 </div><br>    
                 <button id="botao_contato" type="submit" class="button">ENVIAR</button>
               </form>

@@ -157,6 +157,7 @@ footer .col-lg-4 {
 #glyph_icon {
     background: #3C3C3F;
     padding: 20px;
+    font-size: 1.5em;
     border-radius: 100%;
     color: white;
 }

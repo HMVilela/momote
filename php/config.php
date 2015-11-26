@@ -1,8 +1,8 @@
 <?php 
 
- $HOST = "localhost";//"mysql.hostinger.com.br";
- $USUARIO = "root13";
- $SENHA = "";
- $NOMEDOBD = "test";
-
+ $HOST = "mysql.casaroli.com.br";
+ $USUARIO = "momote";
+ $SENHA = "brownbrown!@88543";
+ $NOMEDOBD = "momote";
+ $EMAIL_DE_DESTINO = "contato@momote.io";
 ?>

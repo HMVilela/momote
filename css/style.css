@@ -181,9 +181,10 @@ body {
 }
 
 #momote_pic {
-    width: auto;
-    height: 400px;
-    margin-top: 20px;
+   text-align: left;
+   font-size: 5vh;
+   margin-top:30vh;
+   font-weight: bold;
     
 }
 

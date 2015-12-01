@@ -160,19 +160,28 @@
     
       
       <div class="row" id="formulario" style="margin-top: 80px;">
-           <div class="col-lg-3"></div>
-            <div class="col-lg-6" style="font-size: 1.3em; text-align: center; line-height: 1.5;">               
+           <form ng-submit="assinarNewsLetter()">
+               <div class="col-lg-3"></div>
+            <div class="col-lg-6" style="font-size: 1.3em; text-align: center; line-height: 1.5; margin-right:20px; margin-left: 40px;">               
                 <h3 id="texto_form_tit"><b>FIQUE POR DENTRO</b></h3><br>
                 <span id="texto_form">
                 Faça parte de nossa comunidade e fique informado sobre novidades a respeito de lançamentos futuros da linha momote:<br><br>
-                <div class="col-lg-2"></div>
-                <input id="campo_email" class= "col-lg-5" type="email" placeholder="Seu e-mail">
+                
+                <div class="col-lg-2"></div>                
+                <input id="campo_email" ng-mouseup="limpaMensagem()" ng-model="campoEmail" class= "col-lg-5" type="email" placeholder="Seu e-mail">          
                 <input id="botao_email" class="col-lg-3" type="submit" value="PARTICIPAR">
                 <div class="col-lg-2"></div> 
                </span><br>
-               <p style="font-size: 13px; color: white;">Receba e-mails com promoções e novidades da família momote!</p><br>                       
+               <div class="col-lg-12">
+                    <h4 style="color: yellow;" ng-bind="mensagemDeErro"></h4>
+                </div>
+                <div class="col-lg-12">
+                    <p style="font-size: 13px; color: white;">Receba e-mails com promoções e novidades da família momote!</p>
+                </div>
+                                      
             </div>
             <div class="col-lg-3"></div>
+           </form>
         </div>
        
         

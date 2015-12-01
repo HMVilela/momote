@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body ng-app="Momote" ng-controller="MomoteCtrl">
 
     <!-- Navigation -->
     <nav id="navegacao" class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: rgba(240,240,240,0.9);" >
@@ -354,12 +354,17 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
     
     <!-- /.container -->
 
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/angular/angular.js"></script>
+     <script src="js/angular/angular-route.js"></script>
+     <script src="js/app.js"></script>
+     <script src="js/controllers/MomoteCtrl.js"></script>
+     <script src="js/controllers/Momote001Ctrl.js"></script>
+     <script src="js/controllers/ContatoCtrl.js"></script>
+     <script src="js/config/roteamento.js"></script>
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({

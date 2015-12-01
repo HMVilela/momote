@@ -4,5 +4,5 @@
  $USUARIO = "momote";
  $SENHA = "brownbrown!@88543";
  $NOMEDOBD = "momote";
- $EMAIL_DE_DESTINO = "contato@momote.io";
+ $EMAIL_DE_DESTINO = "henrique.dev01@gmail.com";
 ?>

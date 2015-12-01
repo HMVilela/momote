@@ -76,14 +76,14 @@
 
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
-            <div class="col-lg-10" style="font-size: 1.3em; line-height: 1.5; margin-top: 50px;">
+            <div class="col-lg-10" style="font-size: 1.3em; line-height: 1.5; margin-top: 70px;">
                <img src="images/momote001.png" alt="">
             </div>
             <div class="col-lg-1"></div>            
         </div>
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
-            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 90px;">
             <span>O momote001 representa o primeiro de muitos passos que serão dados até que seja totalmente viável a implantação de Internet em qualquer coisa.</span>
             </div>
             <div class="col-lg-1"></div>            
@@ -91,8 +91,8 @@
         <div class="row">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5;">
-                <div class="col-lg-6" style="font-size: 1.3em; text-align: center; margin-top:10px;">
-                    <img src="images/momote001_placa.png" alt="">
+                <div class="col-lg-6" style="font-size: 1.3em; text-align: center; margin-top:40px;">
+                    <img src="images/Momote_FOTO_2.jpg" alt="" style="height: 320px; width: auto;">
                 </div>
                 <div class="col-lg-6">
                     <span>Ele contém um chip CC2650 da Texas Instruments, que é um processador próprio para controle de sensores e nós finais para IoT. Além de um ARM Cortex M3 programável (para sua aplicação), conta também com 2 rádios que suportam 2 dos padrões mais comuns da IoT: Bluetooth Low Energy (BLE), um padrão moderno para comunicação com aparelhos celulares smartphones e IEEE802.15.4, usado para fazer redes de malha (ou mesh), ZigBee, XBee, Thread, 6LoWPAN, etc. É um processador de baixíssimo consumo de energia, e por isso, dependendo da aplicação, é possível alimentá-lo direamente com 2 baterias alcalinas ou até mesmo com uma bateria CR2032.</span>
@@ -232,6 +232,43 @@
                 </div>
             </div>
                         
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 0.5em; text-align: justify; line-height: 1.5em; margin-top: 100px;">
+            <h3><b>PREÇO E DISPONIBILIDADE</b></h3>
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
+            Estamos trabalhando para viabilizar a produção desse produto com padrão de qualidade a um preço de aproximadamente R$ 120,00. A estimativa é que as primeiras unidades chegem ao mercado por volta de fevereiro de 2016.<br><br> Grande parte dos custos desse ítem são impostos (II, IPI, ICMS, PIS, COFINS, etc) então estamos também preparando a documentação para conseguirmos o máximo possível de isenções a fim de conseguirmos fazer a venda (com nota e garantia) para o consumidor final por esse preço.
+            
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 0.5em; text-align: justify; line-height: 1.5em; margin-top: 100px;">
+            <h3><b>SUPORTE A SOFTWARE</b></h3>
+            </div>
+            <div class="col-lg-1"></div>            
+        </div>
+        <div class="row" style="margin: auto;">
+           <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
+            Por enquanto, para se programar o chip CC2650, presente no momote001 é necessário o uso de um programador cJTAG como por exemplo o <a href="http://www.ti.com/tool/cc-devpack-debug">CC-DEVPACK-DEBUG</a> ou <a href="http://www.ti.com/tool/smartrf06ebk">SMARTRF06EBK</a>.<br><br>
+Os softwares oficiais suportados pela TI para programação desse chip é o <a href="http://www.ti.com/tool/ccstudio">Code Composer Studio (CCS)</a> e <a href="www.iar.com">IAR EWARM</a>. No entanto, é possível usar o <a href="https://launchpad.net/gcc-arm-embedded">GCC</a>.<br><br>
+A stack Bluetooth Smart (BLE) da TI roda em cima do TI-RTOS e está disponível neste <a href="http://www.ti.com/tool/ble-stack">link</a>.<br><br>
+A TI também disponibiliza uma <a href="http://www.ti.com/tool/z-stack">stack de ZigBee</a> que pode ser usada nesse chip.<br>
+Além disso, o software <a href="http://energia.nu">Energia</a> também suportará esse chip a partir da próxima versão. No momento, os binários ainda não estão disponíveis, porém é possível compilar a última versão do Energia manualmente.<br><br>
+Estamos fazendo testes também com o Contiki-OS que já tem suporte a redes mesh (RPL/6LoWPAN) e o CC2650.<br><br>
+Finalmente, estamos trabalhando em uma aplicação que vai permitir que sketches do Arduino/Energia sejam enviados por Bluetooth para o momote001, possibilitando assim que a programação seja feita através de qualquer aparelho celular moderno.<br><br>
+Estamos ansiosos para a evolução dessas plataformas de software e caso você acredite que possa nos ajudar com esses desenvolvimentos, participe da nossa comunidade.
+            
+            </div>
+            <div class="col-lg-1"></div>            
         </div>
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>

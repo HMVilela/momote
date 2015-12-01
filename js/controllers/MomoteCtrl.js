@@ -30,7 +30,7 @@ angular.module("Momote").controller("MomoteCtrl",function($scope,$location,$http
                 $scope.mensagemDeErro = retorno.info;
             }
         }).error(function(erro){
-            $scope.mensagemDeErro = "Ocorreu um erro durante a gravação";
+            $scope.mensagemDeErro = "Infelizmente houve um erro durante o registro. Por favor, tente novamente.";
             console.log(erro);
         
         });

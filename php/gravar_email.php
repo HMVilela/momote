@@ -18,7 +18,7 @@
 	$result_verificacao = mysqli_query($link,$sql_verifica_email)or die(mysqli_error($link));
     if(mysqli_num_rows($result_verificacao) > 0){
             $resposta["status"] = false;
-            $resposta["info"]   = "O e-mail informado ja esta cadastrado";
+            $resposta["info"]   = "O e-mail informado já foi cadastrado";
             $resposta["id"]     = 0;
     
     }

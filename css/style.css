@@ -181,7 +181,10 @@ body {
 }
 
 #momote_pic {
-    width: 100%;
+    width: auto;
+    height: 400px;
+    margin-top: 20px;
+    
 }
 
 #navegacao {

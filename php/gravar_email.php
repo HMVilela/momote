@@ -21,12 +21,12 @@
 	   if($result_insercao > 0){        
             $_id = mysqli_insert_id($link);
             $resposta["status"] = true;
-            $resposta["info"]   = "E-mail gravado com sucesso";
+            $resposta["info"]   = "Obrigado por se registrar! Em breve você receberá novidades em seu e-mail.";
             $resposta["id"]     = $_id;      
 	   }                                          
 	   else{
             $resposta["status"] = false;
-            $resposta["info"]   = "Erro na gravação do e-mail";
+            $resposta["info"]   = "Desculpe, houve um erro ao fazer seu registro. Tente novamente.";
             $resposta["id"]     = 0;
         } 
     

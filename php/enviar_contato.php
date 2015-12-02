@@ -12,11 +12,11 @@
     $header = "From: " . $email;
     if((mail($EMAIL_DE_DESTINO,$assunto,$msg,$header)) === true){
         $resposta["status"] = true;
-        $resposta["info"]   = "E-mail enviado com sucesso";
+        $resposta["info"]   = "Obrigado, seu e-mail foi enviado com sucesso!";
     }
     else{
         $resposta["status"] = false;
-        $resposta["info"]   = "Erro ao enviar o e-mail de contato";
+        $resposta["info"]   = "Desculpe, houve um erro ao enviar o e-mail.";
     }
 	echo json_encode($resposta);
 	

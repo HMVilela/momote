@@ -1,13 +1,14 @@
 <?php 
 	include("config.php");
     $resposta = array();
+    $nome    = $_POST["nome"];
     $email   = $_POST["email"];
 
 	$link = mysqli_connect($HOST,$USUARIO,$SENHA,$NOMEDOBD) or die(mysqli_connect_error());
     mysqli_set_charset($link,'utf8') or die(mysqli_error($link));
 
-    $sql_verifica_email = "select * from email_news where email='" . $email . "'";
-    $sql_insere_email = "insert into email_news(email) values ('" . $email . "')";
+    $sql_verifica_email = "select * from usuarios where email_usuario='" . $email . "'";
+    $sql_insere_email = "insert into usuarios(nome_usuario,email_usuario) values ('" . $nome . "','" . $email . "')";
 
 	$result_verificacao = mysqli_query($link,$sql_verifica_email)or die(mysqli_error($link));
     if(mysqli_num_rows($result_verificacao) > 0){

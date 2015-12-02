@@ -28,7 +28,7 @@
 
 </head>
 
-<body ng-app="Momote" ng-controller="MomoteCtrl">
+<body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: rgba(240,240,240,0.9); !important;" >
@@ -110,17 +110,18 @@
         <div class="row" style="margin: auto;">
            <div class="col-lg-2"></div>
             <div class="col-lg-8">
-                <form name="_form" role="form" id="contato_momote">
+                <form style="margin-top:20px;">
                 <div class="form-group">
                   <label for="nome">Nome:*</label>
-                  <input ng-model="contato.nome" name="nome" type="text" class="form-control" id="nome" placeholder="Nome completo" required>
+                  <input  name="nome" type="text" class="form-control" id="nome" placeholder="Nome completo" required>
                 </div><br>
                 <div class="form-group">
                   <label for="email">E-mail:*</label>
-                  <input ng-model="contato.email" name="email" type="email" class="form-control" id="email" placeholder="E-mail" required>
+                  <input name="email" type="email" class="form-control" id="email" placeholder="E-mail" required>
+                  <label id="respostaDoCadastro"></label>
                 </div><br>  
-                <button ng-disabled="_form.$invalid" id="botao_contato" ng-click="gravarUsuario(contato)" class="button">ENVIAR</button>
-                <label ng-bind="mensagemDeResposta"></label>
+                <button  id="botao_contato"  class="button">ENVIAR</button>
+               
               </form>
             </div>
             <div class="col-lg-2"></div>            
@@ -309,7 +310,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
 
 
         <div class="row" id="formulario" style="margin-top: 80px;">
-           <form ng-submit="assinarNewsLetter()">
+           <form >
                <div class="col-lg-3"></div>
             <div class="col-lg-6" style="font-size: 1.3em; text-align: center; line-height: 1.5; margin-right:20px; margin-left: 40px;">               
                 <h3 id="texto_form_tit"><b>FIQUE POR DENTRO</b></h3><br>
@@ -317,12 +318,12 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                 Faça parte de nossa comunidade e fique informado sobre novidades a respeito de lançamentos futuros da linha momote:<br><br>
 
                 <div class="col-lg-2"></div>                
-                <input id="campo_email" ng-mouseup="limpaMensagem()" ng-model="campoEmail" class= "col-lg-5" type="email" placeholder="Seu e-mail">          
-                <input id="botao_email" class="col-lg-3" type="submit" value="PARTICIPAR">
+                <input id="campo_email"  class= "col-lg-5" type="email" placeholder="Seu e-mail">          
+                <input id="botao_email" class="col-lg-3" type="button" value="PARTICIPAR">
                 <div class="col-lg-2"></div> 
                </span><br>
                <div class="col-lg-12">
-                    <h4 style="color: yellow;" ng-bind="mensagemDeErro"></h4>
+                    <h4 id="respostaDaGravacao" style="color: yellow;"></h4>
                 </div>
                 <div class="col-lg-12">
                     <p style="font-size: 13px; color: white;">Receba e-mails com promoções e novidades da família momote!</p>
@@ -354,14 +355,92 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/angular/angular.js"></script>
-     <script src="js/angular/angular-route.js"></script>
-     <script src="js/app.js"></script>
-     <script src="js/controllers/MomoteCtrl.js"></script>
-     <script src="js/controllers/Momote001Ctrl.js"></script>
-     <script src="js/controllers/ContatoCtrl.js"></script>
-     <script src="js/config/roteamento.js"></script>
+    
     <!-- Script to Activate the Carousel -->
+    <script>
+        function contemArroba(valor){
+            var l = valor.length;
+            for(var c = 0; c < l; c++){
+                if(valor.charAt(c) == '@'){return true;}
+            }
+            return false;
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#botao_contato").click(function(){
+                var nome = $("#nome").val();
+                var email = $("#email").val();
+                if((!contemArroba(email)) || (email == "")){
+                    $("#respostaDoCadastro").text("Endereço de e-mail inválido");
+                    setTimeout(function(){
+                        $("#respostaDoCadastro").text("");
+                            
+                    },3000);
+                    return;
+                }
+                if(nome == ""){
+                    $("#respostaDoCadastro").text("Preencha todos os campos");
+                    setTimeout(function(){
+                        $("#respostaDoCadastro").text("");
+                            
+                    },3000);
+                    return;
+                }
+                $.post( "php/gravar_contato.php", { nome : nome , email: email})
+                .done(function(retorno) {
+                    var resposta = JSON.parse(retorno);
+                    if(resposta.status == true){
+                        $("#respostaDoCadastro").text(resposta.info + "");
+                        $("#nome").val("");
+                        $("#email").val("");
+                        setTimeout(function(){
+                            $("#respostaDoCadastro").text("");
+                            
+                        },4000);
+                    }
+                    else{
+                        $("#respostaDoCadastro").text(resposta.info);
+                        setTimeout(function(){
+                            $("#respostaDoCadastro").text("");  
+                        },4000);
+                        
+                    }
+                });
+            
+            });
+            $("#botao_email").click(function(){
+                var email = $("#campo_email").val();
+                if((!contemArroba(email)) || (email == "")){
+                    $("#respostaDaGravacao").text("Endereço de e-mail inválido");
+                    setTimeout(function(){
+                        $("#respostaDaGravacao").text("");
+                            
+                    },3000);
+                    return;
+                }
+                $.post( "php/gravar_email.php", { email: email})
+                .done(function(retorno) {
+                    var resposta = JSON.parse(retorno);
+                    if(resposta.status == true){
+                        $("#respostaDaGravacao").text(resposta.info + "");
+                        $("#campo_email").val("");
+                        setTimeout(function(){
+                            $("#respostaDaGravacao").text("");
+                            
+                        },4000);
+                    }
+                    else{
+                        $("#respostaDaGravacao").text(resposta.info);
+                        setTimeout(function(){
+                            $("#respostaDaGravacao").text("");  
+                        },4000);
+                        
+                    }
+                });
+            });
+        });
+    </script>
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed

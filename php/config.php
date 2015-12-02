@@ -1,6 +1,6 @@
 <?php 
 
- $HOST = "mysql.casaroli.com.br";
+ $HOST = "mysql.casaroli.com.br";//"localhost"; 
  $USUARIO = "momote";
  $SENHA = "brownbrown!@88543";
  $NOMEDOBD = "momote";

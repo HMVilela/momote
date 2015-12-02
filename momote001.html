@@ -110,16 +110,17 @@
         <div class="row" style="margin: auto;">
            <div class="col-lg-2"></div>
             <div class="col-lg-8">
-                <form role="form" id="contato_momote">
+                <form name="_form" role="form" id="contato_momote">
                 <div class="form-group">
                   <label for="nome">Nome:*</label>
-                  <input type="nome" class="form-control" id="nome" placeholder="">
+                  <input ng-model="contato.nome" name="nome" type="text" class="form-control" id="nome" placeholder="Nome completo" required>
                 </div><br>
                 <div class="form-group">
                   <label for="email">E-mail:*</label>
-                  <input type="email" class="form-control" id="email" placeholder="">
+                  <input ng-model="contato.email" name="email" type="email" class="form-control" id="email" placeholder="E-mail" required>
                 </div><br>  
-                <button id="botao_contato" type="submit" class="button">ENVIAR</button>
+                <button ng-disabled="_form.$invalid" id="botao_contato" ng-click="gravarUsuario(contato)" class="button">ENVIAR</button>
+                <label ng-bind="mensagemDeResposta"></label>
               </form>
             </div>
             <div class="col-lg-2"></div>            

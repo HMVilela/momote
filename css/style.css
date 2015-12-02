@@ -181,13 +181,27 @@ body {
 }
 
 #momote_pic {
-   text-align: left;
    font-size: 5vh;
-   margin-top:30vh;
    font-weight: bold;
-    
+}
+@media(min-width:1200px){
+   .pic_ctr {
+       text-align: right;
+    } 
+    .vertical-align {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
-#navegacao {
-    position: fixed;
+@media(max-width:1200px){
+   .pic_ctr {
+       text-align: center;
+    } 
+    #momote_pic {
+        margin-top: 120px;
+    }
 }
+
+

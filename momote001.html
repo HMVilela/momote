@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
 
@@ -31,7 +31,7 @@
 <body ng-app="Momote" ng-controller="MomoteCtrl">
 
     <!-- Navigation -->
-    <nav id="navegacao" class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: rgba(240,240,240,0.9);" >
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: rgba(240,240,240,0.9); !important;" >
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -41,22 +41,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="images/momote.png" alt="momote icon" style="margin: auto;"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/momote.png" alt="momote icon" style="margin: auto;"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" style="margin-top: 8px; margin-bottom: 8px; float: right;">
+                <ul class="nav navbar-nav" style="margin-top: 10px; margin-bottom: 8px; float: right;">
                     <li>
-                        <a id="botao" href="http://hmvilela.github.io/momote/index.html"><b>HOME</b></a>
+                        <a id="botao" href="index.html"><b>HOME</b></a>
                     </li>
                     <li>
-                        <a id="botao" class="ativo" href="http://hmvilela.github.io/momote/momote001.html"><b>MOMOTE001</b></a>
+                        <a id="botao" class="ativo" href="momote001.html"><b>MOMOTE001</b></a>
                     </li>
                     <li>
-                        <a id="botao" href="http://hmvilela.github.io/momote/contato.html"><b>CONTATO</b></a>
+                        <a id="botao" href="contato.html"><b>CONTATO</b></a>
                     </li>
                     <li>
-                        <a id="botao_p" href="http://hmvilela.github.io/momote/participe.html"><b>PARTICIPE</b></a>
+                        <a id="botao_p" href="participe.html"><b>PARTICIPE</b></a>
                     </li>
                 </ul>
             </div>
@@ -64,56 +64,49 @@
         </div>
         <!-- /.container -->
     </nav>
-    
-    <header>
-       <div class="row">
-        <div class="col-lg-6" style="text-align: right; margin-top: 30px;">
-            <img src="images/Momote_FOTO_1.jpg" alt="">
+
+    <header class="container">
+       <div class="row vertical-align">
+        <div class="col-lg-6 pic_ctr"  id="momote_pic">
+            <img src="images/momote001.png" alt="">
         </div>
-        <div class="col-lg-6" id="momote_pic">
-            <span style="margin-left: 10px; margin-right: 10px;"><b>conecte, evolua</b></span>
+        <div class="col-lg-6 pic_ctr">
+            <img src="images/Momote_FOTO_1.png" alt="" style="margin-top: 45px">
         </div>
         </div>
     </header>
 
-    
 
-    <!-- Page Content -->
-    <div class="container">        
-        
-        <div class="row" style="margin-top: 70px;">
-           <div class="col-lg-1"></div>
-            <div class="col-lg-10" style="font-size: 1.3em; line-height: 1.5em; margin-top: 70px;">
-               <img src="images/momote001.png" alt="">
-            </div>
-            
-            <div class="col-lg-1"></div>            
-        </div>
-        <div class="row" style="margin: auto;">
-           <div class="col-lg-1"></div>
-            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 90px;">
-            <span>O momote001 representa o primeiro de muitos passos que serão dados até que seja totalmente viável a implantação de Internet em qualquer coisa.</span>
-            </div>
-            <div class="col-lg-1"></div>            
-        </div>
-        <div class="row">
-           <div class="col-lg-1"></div>
-            <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5;">
-                <div class="col-lg-6" style="font-size: 1.3em; text-align: center; margin-top:50px;">
-                    <img src="images/Momote_FOTO_2.jpg" alt="" style="height: 300px; width: auto;"><br>
-                    <a href="http://hmvilela.github.io/momote/images/Momote_FOTO_2.jpg" target="_blank"><h3 class="glyphicon glyphicon-zoom-in" style="color: #3C3C3F; position: absolute; right: 100px;"></h3></a>
-                                   
+
+        <!-- Page Content -->
+        <div class="container">        
+
+
+            <div class="row" style="margin: auto;">
+               <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 90px;">
+                <span>O momote001 representa o primeiro de muitos passos que serão dados até que seja totalmente viável a implantação de Internet em qualquer coisa.</span>
+                    </div>
+                    <div class="col-lg-1"></div>            
                 </div>
-                <div class="col-lg-6">
-                    <span>Ele contém um chip CC2650 da Texas Instruments, que é um processador próprio para controle de sensores e nós finais para IoT. Além de um ARM Cortex M3 programável (para sua aplicação), conta também com 2 rádios que suportam 2 dos padrões mais comuns da IoT: Bluetooth Low Energy (BLE), um padrão moderno para comunicação com aparelhos celulares smartphones e IEEE802.15.4, usado para fazer redes de malha (ou mesh), ZigBee, XBee, Thread, 6LoWPAN, etc. É um processador de baixíssimo consumo de energia, e por isso, dependendo da aplicação, é possível alimentá-lo direamente com 2 baterias alcalinas ou até mesmo com uma bateria CR2032.</span>
+                <div class="row">
+                   <div class="col-lg-1"></div>
+                    <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5;">
+                        <div class="col-lg-6" style="font-size: 1.3em; text-align: center; margin-top:50px;">
+                            <a href="http://hmvilela.github.io/momote/images/Momote_FOTO_2.jpg" target="_blank">
+                                <img src="images/Momote_FOTO_2_thumb.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <span>Ele contém um chip <a href="http://www.ti.com/product/cc2650" target="_blank">CC2650</a> da Texas Instruments, que é um processador próprio para controle de sensores e nós finais para IoT. Além de um ARM Cortex M3 programável (para sua aplicação), conta também com 2 rádios que suportam 2 dos padrões mais comuns da IoT: Bluetooth Low Energy (BLE), um padrão moderno para comunicação com aparelhos celulares smartphones e IEEE802.15.4, usado para fazer redes de malha (ou mesh), ZigBee, XBee, Thread, 6LoWPAN, etc. É um processador de baixíssimo consumo de energia, e por isso, dependendo da aplicação, é possível alimentá-lo direamente com 2 baterias alcalinas ou até mesmo com uma bateria CR2032.</span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-1"></div>            
+                <div class="col-lg-1"></div>
         </div>
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 30px;">
-            <span>Estamos quase finalizando os preparativos necessário para fabricar e disponibilizar a venda do primeiro lote. Caso queira receber uma notícia quando o primeiro lote estiver a venda, preencha os campos a seguir:</span>
+            <span>Estamos finalizando os preparativos necessários para fabricar e disponibilizar a venda do primeiro lote. Caso queira receber um aviso quando o primeiro lote estiver a venda, preencha os campos a seguir:</span>
             </div>
             <div class="col-lg-1"></div>            
         </div>
@@ -142,7 +135,7 @@
             <div class="col-lg-1"></div>            
         </div>
         <div class="row" style="margin: auto;">
-           
+
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 100px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
                     <span class="glyphicon glyphicon-dashboard" id="glyph_icon" style=""></span>
@@ -175,10 +168,10 @@
                     </span>
                 </div>
             </div>
-                        
+
         </div>
         <div class="row" style="margin: auto;">
-           
+
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
                     <span class="glyphicon glyphicon-cloud" id="glyph_icon" style=""></span>
@@ -208,10 +201,10 @@
                     </span>
                 </div>
             </div>
-                        
+
         </div>
         <div class="row" style="margin: auto;">
-           
+
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
                     <span class="glyphicon glyphicon-flash" id="glyph_icon" style=""></span>
@@ -219,12 +212,11 @@
                 <div class="col-lg-8">
                     <h4><b>SOFTWARE</b></h4>
                     <span style="font-size: 0.8em; line-height: 2em">
-                    <li>Ambiente de desenvolvimento integrado com Energia/Arduino</li>
                     <li>Suporte a múltiplas pilhas e sistemas RTOS:</li>
                         <ul type="circle">
                         <li>Contiki-os</li>
                         <li>TI-RTOS</li>
-                        <li>Outros</li>
+                        <li>Outros...</li>
                         </ul>
                     </span>
                 </div>
@@ -237,11 +229,11 @@
                     <h4><b>DIMENSÕES E PESO</b></h4>
                     <span style="font-size: 0.8em; line-height: 2em">
                     <li>36mm x 27mm</li>
-                    <li>14g</li>
+                    <li>9g</li>
                     </span>
                 </div>
             </div>
-                        
+
         </div>
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
@@ -253,8 +245,8 @@
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
-            Estamos trabalhando para viabilizar a produção desse produto com padrão de qualidade a um preço de aproximadamente R$ 120,00. A estimativa é que as primeiras unidades chegem ao mercado por volta de fevereiro de 2016.<br><br> Grande parte dos custos desse ítem são impostos (II, IPI, ICMS, PIS, COFINS, etc) então estamos também preparando a documentação para conseguirmos o máximo possível de isenções a fim de conseguirmos fazer a venda (com nota e garantia) para o consumidor final por esse preço.
-            
+            Estamos trabalhando para viabilizar a produção desse produto com padrão de qualidade a um preço de aproximadamente R$ 120,00. A estimativa é que as primeiras unidades chegem ao mercado por volta de fevereiro de 2016.<br><br> Grande parte dos custos desse ítem são impostos (II, IPI, ICMS, PIS, COFINS, etc) e portanto estamos preparando a documentação necessária para conseguirmos algumas isenções fiscais a fim de conseguirmos reduzir ainda mais o custo.
+
             </div>
             <div class="col-lg-1"></div>            
         </div>
@@ -268,15 +260,13 @@
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
-            Por enquanto, para se programar o chip CC2650, presente no momote001 é necessário o uso de um programador cJTAG como por exemplo o <a href="http://www.ti.com/tool/cc-devpack-debug">CC-DEVPACK-DEBUG</a> ou <a href="http://www.ti.com/tool/smartrf06ebk">SMARTRF06EBK</a>.<br><br>
-Os softwares oficiais suportados pela TI para programação desse chip é o <a href="http://www.ti.com/tool/ccstudio">Code Composer Studio (CCS)</a> e <a href="www.iar.com">IAR EWARM</a>. No entanto, é possível usar o <a href="https://launchpad.net/gcc-arm-embedded">GCC</a>.<br><br>
-A stack Bluetooth Smart (BLE) da TI roda em cima do TI-RTOS e está disponível neste <a href="http://www.ti.com/tool/ble-stack">link</a>.<br><br>
-A TI também disponibiliza uma <a href="http://www.ti.com/tool/z-stack">stack de ZigBee</a> que pode ser usada nesse chip.<br>
-Além disso, o software <a href="http://energia.nu">Energia</a> também suportará esse chip a partir da próxima versão. No momento, os binários ainda não estão disponíveis, porém é possível compilar a última versão do Energia manualmente.<br><br>
-Estamos fazendo testes também com o Contiki-OS que já tem suporte a redes mesh (RPL/6LoWPAN) e o CC2650.<br><br>
-Finalmente, estamos trabalhando em uma aplicação que vai permitir que sketches do Arduino/Energia sejam enviados por Bluetooth para o momote001, possibilitando assim que a programação seja feita através de qualquer aparelho celular moderno.<br><br>
+            Por enquanto, para se programar o chip CC2650, presente no momote001 é necessário o uso de um programador cJTAG como por exemplo o <a href="http://www.ti.com/tool/cc-devpack-debug" target="_blank">CC-DEVPACK-DEBUG</a> ou <a href="http://www.ti.com/tool/smartrf06ebk" target="_blank">SMARTRF06EBK</a>.<br><br>
+As ferramentas de desenvolvimento oficiais suportados pela TI para este chip são o <a href="http://www.ti.com/tool/ccstudio" target="_blank">Code Composer Studio (CCS)</a> e o <a href="www.iar.com" target="_blank">IAR EWARM</a>. No entanto, é possível também usar o <a href="https://launchpad.net/gcc-arm-embedded" target="_blank">GCC</a>. A Texas Instruments também disponibiliza uma <a href="http://www.ti.com/tool/ble-stack" target="_blank">Stack Bluetooth Smart (BLE)</a> e uma <a href="http://www.ti.com/tool/z-stack" target="_blank">Stack ZigBee</a> que rodam sobre o TI-RTOS.<br><br>
+Além disso, o software <a href="http://energia.nu" target="_blank">Energia</a> também suportará esse chip a partir da próxima versão. No momento, os binários ainda não estão disponíveis, porém é possível compilar a última versão do Energia manualmente.<br><br>
+Estamos utilizando também o RTOS <a href="http://www.contiki-os.org/" target="_blank">Contiki-OS</a> que já tem suporte a redes mesh (RPL/6LoWPAN) e ao <a href="https://github.com/contiki-os/contiki/tree/master/platform/srf06-cc26xx" target="_blank">CC2650</a>.<br><br>
+Finalmente, estamos trabalhando em uma aplicação que vai permitir que sketches do Arduino/Energia/Wiring sejam enviados por Bluetooth para o momote001, possibilitando assim que a programação seja feita através de qualquer aparelho celular moderno.<br><br>
 Estamos ansiosos para a evolução dessas plataformas de software e caso você acredite que possa nos ajudar com esses desenvolvimentos, participe da nossa comunidade.
-            
+
             </div>
             <div class="col-lg-1"></div>            
         </div>
@@ -298,7 +288,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
             <li>Arquivos para fabricação (Gerber):</li>
             <li>Modelo 3D em formato STEP:</li>
             </ul>
-            
+
             </div>
             <div class="col-lg-1"></div>            
         </div>
@@ -316,10 +306,10 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
             </div>
             <div class="col-lg-1"></div>            
         </div>
-        
+
     </div>
-        
-    
+
+
         <div class="row" id="formulario" style="margin-top: 80px;">
            <form ng-submit="assinarNewsLetter()">
                <div class="col-lg-3"></div>
@@ -327,7 +317,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                 <h3 id="texto_form_tit"><b>FIQUE POR DENTRO</b></h3><br>
                 <span id="texto_form">
                 Faça parte de nossa comunidade e fique informado sobre novidades a respeito de lançamentos futuros da linha momote:<br><br>
-                
+
                 <div class="col-lg-2"></div>                
                 <input id="campo_email" ng-mouseup="limpaMensagem()" ng-model="campoEmail" class= "col-lg-5" type="email" placeholder="Seu e-mail">          
                 <input id="botao_email" class="col-lg-3" type="submit" value="PARTICIPAR">
@@ -339,7 +329,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                 <div class="col-lg-12">
                     <p style="font-size: 13px; color: white;">Receba e-mails com promoções e novidades da família momote!</p>
                 </div>
-                                      
+
             </div>
             <div class="col-lg-3"></div>
            </form>
@@ -347,7 +337,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
 
         <!-- Footer -->
         <footer class="row" >
-           
+
             <div class="col-lg-3"></div>
               <div class="col-lg-6">
                  <div class="col-lg-4 text-center"><br><br><img src="images/momote_footer.png" alt=""></div>
@@ -355,11 +345,11 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                  <div class="col-lg-4 text-center"><br><br><h4><b><u>contato@momote.io</u></b></h4></div>
               </div>
              <div class="col-lg-3"></div> 
-             
+
             <!-- /.row -->
         </footer>
 
-    
+
     <!-- /.container -->
 
     <script src="js/jquery.js"></script>

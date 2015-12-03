@@ -35,6 +35,6 @@
     
     mysqli_close($link);
     //mysqli_free_result($resultado);
-    echo json_encode($resposta);
+        echo json_encode($resposta);
 	
 ?>

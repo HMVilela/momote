@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
 
@@ -47,10 +47,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" style="margin-top: 10px; margin-bottom: 8px; float: right;">
                     <li>
-                        <a id="botao" href="index.html"><b>HOME</b></a>
+                        <a class="botao" href="index.html"><b>HOME</b></a>
                     </li>
                     <li>
-                        <a id="botao" class="ativo" href="momote001.html"><b>MOMOTE001</b></a>
+                        <a class="botao ativo" href="momote001.html"><b>MOMOTE001</b></a>
                     </li>
                     <li>
                         <a id="botao_p" href="participe.html"><b>PARTICIPE</b></a>
@@ -120,7 +120,7 @@
                   <input name="email" type="email" class="form-control" id="email" placeholder="E-mail" required>
                   <label id="respostaDoCadastro"></label>
                 </div><br>  
-                <button  id="botao_contato"  class="button">ENVIAR</button>
+                <input  type="button" id="botao_contato" value="ENVIAR" class="button">
                
               </form>
             </div>
@@ -137,7 +137,7 @@
 
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 100px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
-                    <span class="glyphicon glyphicon-dashboard" id="glyph_icon" style=""></span>
+                    <span class="glyphicon glyphicon-dashboard glyph_icon" style=""></span>
                 </div> 
                 <div class="col-lg-8">
                     <h4><b>PROCESSADOR</b></h4>
@@ -153,7 +153,7 @@
             </div>
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 100px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
-                    <span class="glyphicon glyphicon-cog" id="glyph_icon" style=""></span>
+                    <span class="glyphicon glyphicon-cog glyph_icon" style=""></span>
                 </div> 
                 <div class="col-lg-8">
                     <h4><b>PERIFÉRICOS</b></h4>
@@ -173,7 +173,7 @@
 
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
-                    <span class="glyphicon glyphicon-cloud" id="glyph_icon" style=""></span>
+                    <span class="glyphicon glyphicon-cloud glyph_icon" style=""></span>
                 </div> 
                 <div class="col-lg-8">
                     <h4><b>CONECTIVIDADE</b></h4>
@@ -188,7 +188,7 @@
             </div>
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
-                    <span class="glyphicon glyphicon-book" id="glyph_icon" style=""></span>
+                    <span class="glyphicon glyphicon-book glyph_icon" style=""></span>
                 </div> 
                 <div class="col-lg-8">
                     <h4><b>CAPAS E EXPANSÃO</b></h4>
@@ -206,7 +206,7 @@
 
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
-                    <span class="glyphicon glyphicon-flash" id="glyph_icon" style=""></span>
+                    <span class="glyphicon glyphicon-flash glyph_icon" style=""></span>
                 </div> 
                 <div class="col-lg-8">
                     <h4><b>SOFTWARE</b></h4>
@@ -222,7 +222,7 @@
             </div>
             <div class="col-lg-6" style="font-size: 1.5em; line-height: 1.5; margin-top: 70px;">
                 <div class="col-lg-4" style="text-align: center; margin-bottom: 30px;">
-                    <span class="glyphicon glyphicon-fullscreen" id="glyph_icon" style=""></span>
+                    <span class="glyphicon glyphicon-fullscreen glyph_icon" style=""></span>
                 </div> 
                 <div class="col-lg-8">
                     <h4><b>DIMENSÕES E PESO</b></h4>
@@ -376,7 +376,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                     setTimeout(function(){
                         $("#respostaDoCadastro").text("");
                             
-                    },3000);
+                    },5000);
                     return;
                 }
                 if(nome == ""){
@@ -384,12 +384,14 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                     setTimeout(function(){
                         $("#respostaDoCadastro").text("");
                             
-                    },3000);
+                    },5000);
                     return;
                 }
                 $.post( "php/gravar_contato.php", { nome : nome , email: email})
                 .done(function(retorno) {
+                     console.log(retorno);
                     var resposta = JSON.parse(retorno);
+                   
                     if(resposta.status == true){
                         $("#respostaDoCadastro").text(resposta.info + "");
                         $("#nome").val("");
@@ -397,18 +399,18 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                         setTimeout(function(){
                             $("#respostaDoCadastro").text("");
                             
-                        },4000);
+                        },10000);
                     }
                     else{
                         $("#respostaDoCadastro").text(resposta.info);
                         setTimeout(function(){
-                            $("#respostaDoCadastro").text("");  
-                        },4000);
+                            $("#respostaDoCadastro").text("");
+                        },10000);
                         
                     }
                 });
             
-            });
+            }); // fim do botao gravar contato
             $("#botao_email").click(function(){
                 var email = $("#campo_email").val();
                 if((!contemArroba(email)) || (email == "")){
@@ -416,7 +418,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                     setTimeout(function(){
                         $("#respostaDaGravacao").text("");
                             
-                    },3000);
+                    },5000);
                     return;
                 }
                 $.post( "php/gravar_email.php", { email: email})
@@ -428,17 +430,17 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
                         setTimeout(function(){
                             $("#respostaDaGravacao").text("");
                             
-                        },4000);
+                        },10000);
                     }
                     else{
                         $("#respostaDaGravacao").text(resposta.info);
                         setTimeout(function(){
-                            $("#respostaDaGravacao").text("");  
-                        },4000);
+                            $("#respostaDaGravacao").text(""); 
+                        },10000);
                         
                     }
                 });
-            });
+            }); // fim do botao de gravar email
         });
     </script>
     <script>

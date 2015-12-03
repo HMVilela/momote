@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
 
@@ -47,10 +47,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" style="margin-top: 10px; margin-bottom: 8px; float: right;">
                     <li>
-                        <a id="botao" class="ativo" href="index.html"><b>HOME</b></a>
+                        <a class="botao ativo"  href="index.html"><b>HOME</b></a>
                     </li>
                     <li>
-                        <a id="botao" href="momote001.html"><b>MOMOTE001</b></a>
+                        <a class="botao" href="momote001.html"><b>MOMOTE001</b></a>
                     </li>                    
                     <li>
                         <a id="botao_p" href="participe.html"><b>PARTICIPE</b></a>
@@ -210,11 +210,12 @@
                     setTimeout(function(){
                         $("#respostaDaGravacao").text("");
                             
-                    },3000);
+                    },5000);
                     return;
                 }
                 $.post( "php/gravar_email.php", { email: email})
                 .done(function(retorno) {
+                    console.log(retorno);
                     var resposta = JSON.parse(retorno);
                     if(resposta.status == true){
                         $("#respostaDaGravacao").text(resposta.info + "");
@@ -222,13 +223,13 @@
                         setTimeout(function(){
                             $("#respostaDaGravacao").text("");
                             
-                        },4000);
+                        },10000);
                     }
                     else{
                         $("#respostaDaGravacao").text(resposta.info);
                         setTimeout(function(){
                             $("#respostaDaGravacao").text("");  
-                        },4000);
+                        },10000);
                         
                     }
                 });

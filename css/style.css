@@ -59,12 +59,12 @@ body {
 }
 
 
-#botao {
+.botao {
     color: black;
     margin-right: 15px;
 }
 
-#botao:hover {
+.botao:hover {
     color: #666666;
 }
 
@@ -145,7 +145,7 @@ footer .col-lg-4 {
 
 
 
-#img_rede_social {
+.img_rede_social {
     margin-top: 20px;
     height: 100px;
     width: auto;
@@ -155,7 +155,7 @@ footer .col-lg-4 {
     margin-top: 30px;
 }
 
-#glyph_icon {
+.glyph_icon {
     background: #3C3C3F;
     padding: 20px;
     font-size: 1.5em;

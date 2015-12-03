@@ -1,8 +1,8 @@
 <?php 
 
- $HOST = "localhost";//"mysql.casaroli.com.br";
- $USUARIO = "root"; //"momote";
- $SENHA = ""; //"brownbrown!@88543";
- $NOMEDOBD = "db";
+ $HOST = "mysql.casaroli.com.br";
+ $USUARIO = "momote";
+ $SENHA = "brownbrown!@88543"; 
+ $NOMEDOBD = "momote";
  $EMAIL_DE_DESTINO = "contato@momote.io";
 ?>

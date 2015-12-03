@@ -22,7 +22,7 @@
 	   if($result_insercao > 0){        
             $_id = mysqli_insert_id($link);
             $resposta["status"] = true;
-            $resposta["info"]   = "Obrigado, seu registro foi feito com sucesso!";
+            $resposta["info"]   = "Obrigado por se registrar!";
             $resposta["id"]     = $_id;      
 	   }                                          
 	   else{

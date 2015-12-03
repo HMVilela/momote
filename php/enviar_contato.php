@@ -12,7 +12,7 @@
     $header = "From: " . $email;
     if((mail($EMAIL_DE_DESTINO,$assunto,$msg,$header)) === true){
         $resposta["status"] = true;
-        $resposta["info"]   = "Obrigado, seu e-mail foi enviado com sucesso!";
+        $resposta["info"]   = "Obrigado, seu e-mail foi enviado!";
     }
     else{
         $resposta["status"] = false;

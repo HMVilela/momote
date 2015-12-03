@@ -60,12 +60,12 @@ body {
 
 
 .botao {
-    color: black;
+    color: black !important;
     margin-right: 15px;
 }
 
 .botao:hover {
-    color: #666666;
+    color: #666666 !important;
 }
 
 .ativo {

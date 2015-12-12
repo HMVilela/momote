@@ -50,7 +50,7 @@
                         <a class="botao"  href="index.html"><b>HOME</b></a>
                     </li>
                     <li>
-                        <a class="botao ativo" href="momote001.html"><b>MOMOTE001</b></a>
+                        <a class="botao ativo" href="momote001.html"><b>001</b></a>
                     </li>                    
                     <li>
                         <a id="botao_p" href="participe.html"><b>PARTICIPE</b></a>
@@ -95,7 +95,7 @@
                             </a>
                         </div>
                         <div class="col-lg-6">
-                            <span>Ele contém um chip <a href="http://www.ti.com/product/cc2650" target="_blank">CC2650</a> da Texas Instruments, que é um processador próprio para controle de sensores e nós finais para IoT. Além de um ARM Cortex M3 programável (para sua aplicação), conta também com 2 rádios que suportam 2 dos padrões mais comuns da IoT: Bluetooth Low Energy (BLE), um padrão moderno para comunicação com aparelhos celulares smartphones e IEEE802.15.4, usado para fazer redes de malha (ou mesh), ZigBee, XBee, Thread, 6LoWPAN, etc. É um processador de baixíssimo consumo de energia, e por isso, dependendo da aplicação, é possível alimentá-lo direamente com 2 baterias alcalinas ou até mesmo com uma bateria CR2032.</span>
+                            <span>Ele contém um chip <a href="http://www.ti.com/product/cc2650" target="_blank">CC2650 da Texas Instruments</a>, que é um processador próprio para controle de sensores e nós finais para IoT. Além de um ARM Cortex M3 programável (para sua aplicação), conta também com 2 rádios que suportam 2 dos padrões mais comuns da IoT: Bluetooth Low Energy (BLE), um padrão moderno para comunicação com aparelhos celulares smartphones e IEEE802.15.4, usado para fazer redes de malha (ou mesh), ZigBee, XBee, Thread, 6LoWPAN, etc. É um processador de baixíssimo consumo de energia, e por isso, dependendo da aplicação, é possível alimentá-lo direamente com 2 baterias alcalinas ou até mesmo com uma bateria CR2032.</span>
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
@@ -260,7 +260,7 @@
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
             Por enquanto, para se programar o chip CC2650, presente no momote001 é necessário o uso de um programador cJTAG como por exemplo o <a href="http://www.ti.com/tool/cc-devpack-debug" target="_blank">CC-DEVPACK-DEBUG</a> ou <a href="http://www.ti.com/tool/smartrf06ebk" target="_blank">SMARTRF06EBK</a>.<br><br>
-As ferramentas de desenvolvimento oficiais suportados pela TI para este chip são o <a href="http://www.ti.com/tool/ccstudio" target="_blank">Code Composer Studio (CCS)</a> e o <a href="www.iar.com" target="_blank">IAR EWARM</a>. No entanto, é possível também usar o <a href="https://launchpad.net/gcc-arm-embedded" target="_blank">GCC</a>. A Texas Instruments também disponibiliza uma <a href="http://www.ti.com/tool/ble-stack" target="_blank">Stack Bluetooth Smart (BLE)</a> e uma <a href="http://www.ti.com/tool/z-stack" target="_blank">Stack ZigBee</a> que rodam sobre o TI-RTOS.<br><br>
+As ferramentas de desenvolvimento oficiais suportados pela TI para este chip são o <a href="http://www.ti.com/tool/ccstudio" target="_blank">Code Composer Studio (CCS)</a> e o <a href="http://www.iar.com" target="_blank">IAR EWARM</a>. No entanto, é possível também usar o <a href="https://launchpad.net/gcc-arm-embedded" target="_blank">GCC</a>. A Texas Instruments também disponibiliza uma <a href="http://www.ti.com/tool/ble-stack" target="_blank">Stack Bluetooth Smart (BLE)</a> e uma <a href="http://www.ti.com/tool/z-stack" target="_blank">Stack ZigBee</a> que rodam sobre o TI-RTOS.<br><br>
 Além disso, o software <a href="http://energia.nu" target="_blank">Energia</a> também suportará esse chip a partir da próxima versão. No momento, os binários ainda não estão disponíveis, porém é possível compilar a última versão do Energia manualmente.<br><br>
 Estamos utilizando também o RTOS <a href="http://www.contiki-os.org/" target="_blank">Contiki-OS</a> que já tem suporte a redes mesh (RPL/6LoWPAN) e ao <a href="https://github.com/contiki-os/contiki/tree/master/platform/srf06-cc26xx" target="_blank">CC2650</a>.<br><br>
 Finalmente, estamos trabalhando em uma aplicação que vai permitir que sketches do Arduino/Energia/Wiring sejam enviados por Bluetooth para o momote001, possibilitando assim que a programação seja feita através de qualquer aparelho celular moderno.<br><br>
@@ -279,13 +279,14 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
-            Estamos finalizando os preparativos e desenvolvimentos necessários para fabricar o momote001 e disponibilizar para venda. Enquanto isso, o esquema elétrico e o layout da placa de circuito impresso que foram feitos no <a href="www.circuitmaker.com">Circuit Maker</a> estão disponibilizados sob a licença CERN OHL v1.2, que permite que qualquer um acesse e estude esse hardware através dos seguintes links:
+            Estamos finalizando os preparativos e desenvolvimentos necessários para fabricar o momote001 e disponibilizar para venda. Enquanto isso, o esquema elétrico e o layout da placa de circuito impresso que foram feitos no <a href="http://www.circuitmaker.com">Circuit Maker</a> e no <a href="http://www.altium.com">Altium</a> estão disponibilizados sob a licença CERN OHL v1.2, que permite que qualquer um acesse e estude esse hardware através dos seguintes links:
             <ul style="margin-top: 30px; margin-left: 20px;">
-            <li>Projeto do CM: Buscar pelo projeto momote001</li>
-            <li>Esquema elétrico em PDF:</li>
-            <li>Bill of Materials:</li>
-            <li>Arquivos para fabricação (Gerber):</li>
-            <li>Modelo 3D em formato STEP:</li>
+			<li><a href="https://github.com/momote-io/momote001">Projeto no GitHub</a></li>
+            <li>Projeto do CM: Buscar pelo nome de projeto momote001</li>
+            <li><a href="https://github.com/momote-io/momote001/blob/master/Project%20Outputs%20for%20momote001/schematic.pdf">Esquema elétrico em PDF</a></li>
+            <li><a href="https://github.com/momote-io/momote001/blob/master/Project%20Outputs%20for%20momote001/momote001.xls">Bill of Materials</a></li>
+            <li><a href="https://github.com/momote-io/momote001/blob/master/Project%20Outputs%20for%20momote001/GERBER.zip">Arquivos para fabricação (Gerber)</a></li>
+            <li><a href="https://github.com/momote-io/momote001/blob/master/Project%20Outputs%20for%20momote001/PCB1.step">Modelo 3D em formato STEP</a></li>
             </ul>
 
             </div>
@@ -301,7 +302,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: center; line-height: 1.5; margin-top: 40px;">
-            <a href="">Entre em contato por e-mail e agende uma conversa.</a>
+            <a href="mailto:contato@momote.io">Entre em contato por e-mail e agende uma conversa.</a>
             </div>
             <div class="col-lg-1"></div>            
         </div>
@@ -341,7 +342,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
               <div class="col-lg-6">
                  <div class="col-lg-4 text-center"><br><br><img src="images/momote_footer.png" alt=""></div>
                  <div class="col-lg-4 text-center"><img src="images/open_source_footer.png" alt=""></div>
-                 <div class="col-lg-4 text-center"><br><br><h4><b><u>contato@momote.io</u></b></h4></div>
+                 <div class="col-lg-4 text-center"><br><br><h4><b><a href="mailto:contato@momote.io">contato@momote.io</a></b></h4></div>
               </div>
              <div class="col-lg-3"></div> 
 

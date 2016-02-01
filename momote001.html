@@ -194,7 +194,7 @@
                     <h4><b>CAPAS E EXPANSÃO</b></h4>
                     <span style="font-size: 0.8em; line-height: 2em">
                     <li>Suporte para bateria CR2032</li>
-                    <li>Conversor UART/USB debug</li>
+                    <li>Conversor UART/USB</li>
                     <li>Bateria recarregável</li>
                     <li>Outras estão vindo...</li>
                     </span>
@@ -259,7 +259,7 @@
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
-            Por enquanto, para se programar o chip CC2650, presente no momote001 é necessário o uso de um programador cJTAG como por exemplo o <a href="http://www.ti.com/tool/cc-devpack-debug" target="_blank">CC-DEVPACK-DEBUG</a> ou <a href="http://www.ti.com/tool/smartrf06ebk" target="_blank">SMARTRF06EBK</a>.<br><br>
+            Por enquanto, para se programar o chip CC2650, presente no momote001 é necessário o uso de um programador cJTAG como por exemplo o <a href="http://www.ti.com/tool/cc-devpack-debug" target="_blank">CC-DEVPACK-DEBUG</a>, <a href="http://www.ti.com/tool/smartrf06ebk" target="_blank">SMARTRF06EBK</a> ou <a href="http://www.ti.com/tool/LAUNCHXL-CC2650" target="_blank">CC2650 LaunchPad</a>.<br><br>
 As ferramentas de desenvolvimento oficiais suportados pela TI para este chip são o <a href="http://www.ti.com/tool/ccstudio" target="_blank">Code Composer Studio (CCS)</a> e o <a href="http://www.iar.com" target="_blank">IAR EWARM</a>. No entanto, é possível também usar o <a href="https://launchpad.net/gcc-arm-embedded" target="_blank">GCC</a>. A Texas Instruments também disponibiliza uma <a href="http://www.ti.com/tool/ble-stack" target="_blank">Stack Bluetooth Smart (BLE)</a> e uma <a href="http://www.ti.com/tool/z-stack" target="_blank">Stack ZigBee</a> que rodam sobre o TI-RTOS.<br><br>
 Além disso, o software <a href="http://energia.nu" target="_blank">Energia</a> também suportará esse chip a partir da próxima versão. No momento, os binários ainda não estão disponíveis, porém é possível compilar a última versão do Energia manualmente.<br><br>
 Estamos utilizando também o RTOS <a href="http://www.contiki-os.org/" target="_blank">Contiki-OS</a> que já tem suporte a redes mesh (RPL/6LoWPAN) e ao <a href="https://github.com/contiki-os/contiki/tree/master/platform/srf06-cc26xx" target="_blank">CC2650</a>.<br><br>
@@ -279,7 +279,7 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
         <div class="row" style="margin: auto;">
            <div class="col-lg-1"></div>
             <div class="col-lg-10" style="font-size: 1.3em; text-align: justify; line-height: 1.5; margin-top: 70px;">
-            Estamos finalizando os preparativos e desenvolvimentos necessários para fabricar o momote001 e disponibilizar para venda. Enquanto isso, o esquema elétrico e o layout da placa de circuito impresso que foram feitos no <a href="http://www.circuitmaker.com">Circuit Maker</a> e no <a href="http://www.altium.com">Altium</a> estão disponibilizados sob a licença CERN OHL v1.2, que permite que qualquer um acesse e estude esse hardware através dos seguintes links:
+            Estamos finalizando os preparativos e desenvolvimentos necessários para fabricar o momote001 e disponibilizar para venda. Enquanto isso, o esquema elétrico e o layout da placa de circuito impresso que foram feitos no <a href="http://www.circuitmaker.com" target="_blank">Circuit Maker</a> e no <a href="http://www.altium.com" target="_blank">Altium</a> estão disponibilizados sob a licença CERN OHL v1.2, que permite que qualquer um acesse e estude esse hardware através dos seguintes links:
             <ul style="margin-top: 30px; margin-left: 20px;">
 			<li><a href="https://github.com/momote-io/momote001">Projeto no GitHub</a></li>
             <li>Projeto do CM: Buscar pelo nome de projeto momote001</li>
@@ -449,6 +449,17 @@ Estamos ansiosos para a evolução dessas plataformas de software e caso você a
         interval: 5000 //changes the speed
     })
     </script>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67941016-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 
